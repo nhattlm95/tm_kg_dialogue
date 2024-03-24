@@ -7,7 +7,7 @@ The implementation of the paper
 **Enhancing Knowledge Retrieval with Topic Modeling for  
 Knowledge-Grounded Dialogue**. Nhat Tran and [**Diane Litman**](https://people.cs.pitt.edu/~litman/), **LREC-Coling 2024**.
 ## Install environment
-```console
+```
 pip install -r requirements.txt
 pip install -U contextualized_topic_models==2.0.1
 ```
@@ -35,7 +35,7 @@ Modify the parameters in `params.txt`
 
 Train a CTM on the knowledge corpus and classify all the articles into a specific number of clusters:
 
-```console
+```
 python train_ctm.py \
 --do_train \
 --do_eval_doc \
@@ -50,7 +50,7 @@ python train_ctm.py \
 
 Next, we classify all the dialogue samples into different clusters:
 
-```console
+```
 python train_ctm.py \
 --do_eval_dial \
 --dataset data/multidoc2dial_doc.json \ # Change this to 'data/kilt_knowledgesource.json' for KILT-dialogue
@@ -66,7 +66,7 @@ python train_ctm.py \
 
 Run `rag_topic.py` for RAG_topic or `rag_context_topic` for RAG_context_topic model (only for Multidoc2Dial).
 
-```console
+```
 python rag_topic.py \
 --dataset multidoc2dial \ # Change this to kilt_dialogue for KILT-dialogue
 --output_dir $OUTPUT_DIR \
@@ -74,7 +74,7 @@ python rag_topic.py \
 --fp16 \\
 ```
 
-```console
+```
 python rag_context_topic.py \
 --output_dir $OUTPUT_DIR \
 --model_type rag_token \
