@@ -1,0 +1,17 @@
+numpy==1.17.4
+torch>=1.5.1
+pytorch-transformers==1.1.0
+tqdm==4.36.1
+tabulate==0.8.3
+nlp==0.4.0
+nltk==3.4.5
+parlai
+matplotlib
+sklearn
+yaml
+faiss-cpu >= 1.6.3
+datasets >= 1.0.1
+psutil >= 5.7.0
+ray >= 1.10.0
+pytorch-lightning >= 1.5.10, <=1.6.0
+transformers
