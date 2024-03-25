@@ -44,7 +44,7 @@ python train_ctm.py \
 --data_preparation_file save/models/topic_models/data_cache.pkl \
 --model_path_prefix save/models/topic_models/ctm_20k_topics_ \
 --output_path save/models/topic_models/ctm_20k_topics_NCLUSTER/DATASET_ctm_20k_topics_ \
---sbe
+--sbert_name save/models/topic_models/his_only_sentenceBert
 ```
 ### Inference
 
